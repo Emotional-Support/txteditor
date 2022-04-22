@@ -1,1 +1,1 @@
-import txt
+from txteditor.txt import Txt
