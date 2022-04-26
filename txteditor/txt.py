@@ -1,12 +1,5 @@
 import os
-
-
-class InvalidFilePath(BaseException):
-    pass
-
-
-class InvalidFileType(BaseException):
-    pass
+from errors import InvalidFilePathError, InvalidFileTypeError
 
 
 class Txt:
@@ -33,7 +26,7 @@ class Txt:
         self.id = self.path.split("/")[-1]
         Txt.files += 1
 
-    def unpack(self, list: list):
+    def unpack(self, list: list, gen=False):
 
         """
         # Usage Example
@@ -53,11 +46,19 @@ class Txt:
         """
         if os.path.exists(self.path):
             if ".txt" in self.path:
-                with open(self.path, encoding="UTF8") as txt:
-                    list_data = txt.readlines()
-                for item in list_data:
-                    list.append(item)
+                if gen == False:
+                    with open(self.path, encoding="UTF8") as txt:
+                        list_data = txt.readlines()
+                    for item in list_data:
+                        list.append(item)
+                else:
+                    with open(self.path, encoding="UTF8") as txt:
+                        list_data = txt.readlines()
+                    for item in list_data:
+                        list.append(item)
+                    list = (i for i in list)
+
             else:
-                raise InvalidFileType
+                raise InvalidFileTypeError
         else:
-            raise InvalidFilePath
+            raise InvalidFilePathError

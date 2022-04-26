@@ -1,1 +1,2 @@
-from txteditor.txt import Txt
+import txteditor
+import errors
