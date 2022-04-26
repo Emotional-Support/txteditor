@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+txteditor/__init__.py
+txteditor/errors.py
+txteditor/txt.py
+txteditor.egg-info/PKG-INFO
+txteditor.egg-info/SOURCES.txt
+txteditor.egg-info/dependency_links.txt
+txteditor.egg-info/top_level.txt

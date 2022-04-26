@@ -1,5 +1,5 @@
 import os
-from errors import InvalidFilePathError, InvalidFileTypeError
+from txteditor.errors import InvalidFilePathError, InvalidFileTypeError
 
 
 class Txt:

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: txteditor
+Version: 0.3
+Summary: Package to interact with .txt files
+Home-page: https://github.com/Emotional-Support/txteditor
+Download-URL: https://github.com/Emotional-Support/txteditor/archive/refs/tags/v_03.tar.gz
+Author: Emotional Support
+Author-email: poilash227@gmail.com
+License: Apache license 2.0
+Keywords: txteditor,txt,unpack
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.10
+License-File: LICENSE.txt
+
+UNKNOWN
+
