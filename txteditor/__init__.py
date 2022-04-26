@@ -1,2 +1,2 @@
-import txteditor
-import errors
+from txteditor.txt import Txt
+from txteditor.errors import InvalidFilePathError, InvalidFileTypeError
